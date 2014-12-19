@@ -1,7 +1,8 @@
-## The functions will attempt to find the inverse of the given matrix and cache it
-## Should the inverse be already available, it will be retrieved from the cache
+## Routines to Cache the Inverse of a Matrix
+## Author: LMADANK
 
-## Caching the Inverse of a Matrix
+## Function which creates the object which holds matrix 
+## Invokes the "cacheSolve" routine to obtain the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +19,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function will attempt to find the inverse of the given matrix passed
+## and cache it in the global environment.
+## Should the inverse be already available, it will be retrieved from the cache and 
+## passed on to the calling function.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
